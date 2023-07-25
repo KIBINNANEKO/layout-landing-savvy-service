@@ -1,22 +1,13 @@
 html, body{
-	min-width: 375px;
+	min-width: $minWidth + 'px';
 	height: 100%;
-	font-family: 'Poppins';
-	line-height: 150%;
-	.wrapper{
-		display: flex;
-		flex-direction: column;
-		min-height: 100%;
-		overflow: hidden;
-	}
 
 	._container{
-		max-width: 1200px;
+		max-width: $maxWidth;
 		margin: 0 auto;
-		padding: 0px 20px;
+		
+		@include adaptiv-value('padding-left', 30, 15, 0);
+		@include adaptiv-value('padding-right', 30, 15, 0);
 	}
 
-	.main{
-		flex: 1 1 auto;
-	}
 }
