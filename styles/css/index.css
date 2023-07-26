@@ -121,3 +121,18 @@ html ._container, body ._container {
   padding-left: calc(15px + 15 * ((100vw - 375px) / 1545));
   padding-right: calc(15px + 15 * ((100vw - 375px) / 1545));
 }
+html .img_box img, body .img_box img {
+  width: 200px;
+}
+
+header {
+  height: 60px;
+  position: relative;
+}
+header div {
+  margin-left: calc(15px + 15 * ((100vw - 375px) / 1545));
+  margin-right: calc(15px + 15 * ((100vw - 375px) / 1545));
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

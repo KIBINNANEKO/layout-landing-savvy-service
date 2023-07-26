@@ -1,0 +1,12 @@
+header {
+	height: 60px;
+	position: relative;
+
+	div {
+		@include adaptiv-value('margin-left', 30, 15, 0);
+		@include adaptiv-value('margin-right', 30, 15, 0);
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}

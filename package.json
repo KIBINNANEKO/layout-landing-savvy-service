@@ -1,0 +1,23 @@
+{
+  "name": "layout-landing-savvy-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KIBINNANEKO/layout-landing-savvy-service.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KIBINNANEKO/layout-landing-savvy-service/issues"
+  },
+  "homepage": "https://github.com/KIBINNANEKO/layout-landing-savvy-service#readme",
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4"
+  },
+  "keywords": []
+}

@@ -8,6 +8,14 @@ html, body{
 		
 		@include adaptiv-value('padding-left', 30, 15, 0);
 		@include adaptiv-value('padding-right', 30, 15, 0);
+
+	}
+
+
+	.img_box {
+		img {
+			width: 200px;
+		}
 	}
 
 }
