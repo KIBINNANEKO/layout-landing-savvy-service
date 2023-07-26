@@ -1,6 +1,12 @@
 header {
+	background: $white;
+
 	height: 60px;
-	position: relative;
+	width: 100%;
+
+	top: 0;
+	position: sticky;
+	z-index: 400;
 
 	div {
 		@include adaptiv-value('margin-left', 30, 15, 0);

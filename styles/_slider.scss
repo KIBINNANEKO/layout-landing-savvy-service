@@ -1,5 +1,50 @@
-	.img_box {
-		img {
-			width: 200px;
-		}
+.img_box {
+	transition: opacity 0.3s ease;
+
+	img {
+			@media (max-width: 440px) {
+					width: 230px;
+				}
+			
+				@media (min-width: 440px) {
+					width: 260px;
+				}
+			
+				@media (min-width: 800px) {
+					width: 290px;
+				}
 	}
+}
+
+.splide__pagination {
+	position: relative;
+	margin-top: 15px;
+
+	.is-active{
+		background: $black;
+	}
+}
+
+
+.block-slider{
+	position: relative;
+	height: 120px;
+
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.slider-text {
+	position: absolute;
+	min-width: 75vw;
+	top: 10%;
+	margin: 0 auto;
+	
+	h2{
+		font-size: 18px;
+	}
+
+	p{
+		font-size: 14px;
+	}
+}
