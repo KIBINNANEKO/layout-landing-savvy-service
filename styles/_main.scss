@@ -2,20 +2,76 @@ html, body{
 	min-width: $minWidth + 'px';
 	height: 100%;
 
+	color: $black;
+
 	._container{
-		max-width: $maxWidth;
+		max-width: $maxWidthContainer + px;
 		margin: 0 auto;
-		
-		@include adaptiv-value('padding-left', 30, 15, 0);
-		@include adaptiv-value('padding-right', 30, 15, 0);
+
+		@media (max-width: 440px){
+			width: 290px;		
+		}
+
+		@media (min-width: 440px) {
+			width: 320px;
+		}
+
+		@media (min-width: 800px) {
+			width: 350px;
+		}
+
+		.page{
+			width: 100%;
+			height: calc(100vh - 60px);
+
+			position: relative;
+
+			padding-bottom: 2vh;
+		}
 
 	}
 
+	.main-subheader{
+		font-family: $Tektur;
+		font-size: 30px;
+		font-weight: 500;
+		line-height: 110%;
+	}
 
-	.img_box {
-		img {
-			width: 200px;
+	.main-text{
+		font-family: $SF-Pro;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -0.39px;
+	}
+
+
+	.block_1{
+		text-align: center;
+		position: relative;
+
+		img{
+			width: 290px;
+
+			@media (min-width: 440px) {
+				width: 320px;
+			}
+
+			@media (min-width: 800px) {
+				width: 350px;
+			}
 		}
+
+		.block-1__text-block{
+			text-align: left;
+
+			p{
+				margin-top: 5px;
+			}
+		}
+
+
 	}
 
 }

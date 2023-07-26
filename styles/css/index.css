@@ -114,14 +114,71 @@ h1, h2, h3, h4, h5, h6 {
 html, body {
   min-width: "320px";
   height: 100%;
+  color: black;
 }
 html ._container, body ._container {
-  max-width: 1920;
+  max-width: 1700px;
   margin: 0 auto;
-  padding-left: calc(15px + 15 * ((100vw - 375px) / 1545));
-  padding-right: calc(15px + 15 * ((100vw - 375px) / 1545));
 }
-html .img_box img, body .img_box img {
+@media (max-width: 440px) {
+  html ._container, body ._container {
+    width: 290px;
+  }
+}
+@media (min-width: 440px) {
+  html ._container, body ._container {
+    width: 320px;
+  }
+}
+@media (min-width: 800px) {
+  html ._container, body ._container {
+    width: 350px;
+  }
+}
+html ._container .page, body ._container .page {
+  width: 100%;
+  height: calc(100vh - 60px);
+  position: relative;
+  padding-bottom: 2vh;
+}
+html .main-subheader, body .main-subheader {
+  font-family: "Tektur", cursive;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 110%;
+}
+html .main-text, body .main-text {
+  font-family: "SF Pro Text";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.39px;
+}
+html .block_1, body .block_1 {
+  text-align: center;
+  position: relative;
+}
+html .block_1 img, body .block_1 img {
+  width: 290px;
+}
+@media (min-width: 440px) {
+  html .block_1 img, body .block_1 img {
+    width: 320px;
+  }
+}
+@media (min-width: 800px) {
+  html .block_1 img, body .block_1 img {
+    width: 350px;
+  }
+}
+html .block_1 .block-1__text-block, body .block_1 .block-1__text-block {
+  text-align: left;
+}
+html .block_1 .block-1__text-block p, body .block_1 .block-1__text-block p {
+  margin-top: 5px;
+}
+
+.img_box img {
   width: 200px;
 }
 
