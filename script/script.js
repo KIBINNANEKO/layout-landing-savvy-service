@@ -1,6 +1,6 @@
 var splide = new Splide('.splide', {
 	type: 'loop',
-	padding: '5%',
+	padding: '7%',
 	arrows: false,
 	autoWidth: true,
 	gap: '7%',

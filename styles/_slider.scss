@@ -36,15 +36,29 @@
 
 .slider-text {
 	position: absolute;
-	min-width: 75vw;
+	min-width: 260px;
+	max-width: 370px;
 	top: 10%;
 	margin: 0 auto;
 	
 	h2{
-		font-size: 18px;
+		white-space: nowrap;
+		@include adaptiv-value('font-size', 24, 18, 0);
 	}
 
 	p{
-		font-size: 14px;
+		@include adaptiv-value('font-size', 20, 14, 0);
+	}
+}
+
+.img_box {
+	width: 250px;
+
+	@media (min-width: 440px) {
+		width: 260px;
+	}
+
+	@media (min-width: 800px) {
+		width: 280px;
 	}
 }
