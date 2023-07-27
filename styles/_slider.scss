@@ -30,35 +30,47 @@
 	position: relative;
 	height: 120px;
 
+	@media(min-width: 700px){
+		height: 140px;
+	}
+
 	opacity: 0;
 	transition: opacity 0.3s ease;
 }
 
 .slider-text {
 	position: absolute;
+
 	min-width: 260px;
 	max-width: 370px;
+
 	top: 10%;
 	margin: 0 auto;
 	
 	h2{
 		white-space: nowrap;
-		@include adaptiv-value('font-size', 24, 18, 0);
+		@include adaptiv-value('font-size', 28, 18, 0);
 	}
 
 	p{
-		@include adaptiv-value('font-size', 20, 14, 0);
+		@include adaptiv-value('font-size', 24, 14, 0);
 	}
 }
 
 .img_box {
-	width: 250px;
+	img{
+	width: 240px;
 
 	@media (min-width: 440px) {
-		width: 260px;
+		width: 250px;
 	}
 
-	@media (min-width: 800px) {
-		width: 280px;
+	@media (min-width: 520px) {
+		width: 300px;
 	}
+	@media (min-width: 700px) {
+		width: 340px;
+	}
+}
+	
 }
