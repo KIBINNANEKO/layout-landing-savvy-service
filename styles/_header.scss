@@ -16,9 +16,18 @@ header {
 		@include adaptiv-value('padding-right', 300, 100, 0);
 	}
 
+	@media(min-width: 1200px) {
+		height: 90px;
+	}
+
 	div {
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
+
+
+		img{
+			@include adaptiv-value('width', 150, 110, 0);
+		}
 	}
 }

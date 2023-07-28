@@ -10,12 +10,17 @@ html, body{
 		position: relative;
 		margin-top: 80px;
 
+		@media(min-width: 1200px) {
+			margin-top: 110px;
+		}
+
 		.block-1__text-block{
 			text-align: left;
 
 			@media(min-width: 980px) {
 				max-width: 400px;
 			}
+
 		}
 
 
@@ -23,11 +28,21 @@ html, body{
 
 	.block-2{
 		h2{
-			text-align: center;
+			@media(min-width: 980px) {
+				text-align: center;
+			}
 		}
 
 		img{
 			width: 80%;
+		}
+	}
+
+	.block-3-1 {
+		h2 {
+			@media(min-width: 980px) {
+				text-align: center;
+			}
 		}
 	}
 	
@@ -37,6 +52,7 @@ html, body{
 			margin-top: 25px
 		}
 	}
+
 
 	.block-4{
 		h2{

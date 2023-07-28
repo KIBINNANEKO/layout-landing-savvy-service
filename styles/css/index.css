@@ -122,6 +122,11 @@ html .block-1, body .block-1 {
   position: relative;
   margin-top: 80px;
 }
+@media (min-width: 1200px) {
+  html .block-1, body .block-1 {
+    margin-top: 110px;
+  }
+}
 html .block-1 .block-1__text-block, body .block-1 .block-1__text-block {
   text-align: left;
 }
@@ -130,11 +135,18 @@ html .block-1 .block-1__text-block, body .block-1 .block-1__text-block {
     max-width: 400px;
   }
 }
-html .block-2 h2, body .block-2 h2 {
-  text-align: center;
+@media (min-width: 980px) {
+  html .block-2 h2, body .block-2 h2 {
+    text-align: center;
+  }
 }
 html .block-2 img, body .block-2 img {
   width: 80%;
+}
+@media (min-width: 980px) {
+  html .block-3-1 h2, body .block-3-1 h2 {
+    text-align: center;
+  }
 }
 html .block-3 img, body .block-3 img {
   margin-top: 25px;
@@ -234,11 +246,6 @@ html .block-6__form-block button, body .block-6__form-block button {
   line-height: 110%;
   padding-bottom: 10px;
 }
-@media (max-width: 980px) {
-  .main-subheader {
-    text-align: center;
-  }
-}
 
 .main-text, .main-text__left {
   font-size: calc(16px + 8 * ((100vw - 375px) / 1545));
@@ -293,6 +300,9 @@ html .block-6__form-block button, body .block-6__form-block button {
   .full-image {
     width: 40%;
   }
+}
+.full-image__full {
+  width: 80%;
 }
 
 .align-center {
@@ -396,8 +406,16 @@ header {
     padding-right: calc(100px + 200 * ((100vw - 375px) / 1545));
   }
 }
+@media (min-width: 1200px) {
+  header {
+    height: 90px;
+  }
+}
 header div {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+header div img {
+  width: calc(110px + 40 * ((100vw - 375px) / 1545));
 }
