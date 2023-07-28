@@ -6,8 +6,8 @@ export function firstSliderTextMount(arraySlidesForTextOnMobile, blockForTextOnD
 		blockForTextOnDesktop.insertAdjacentHTML('beforeend', `
 		<div class="block-slider">
 			<div class="slider-text">
-				<h2 class="main-subheader">${data[0].title}</h2>
-				<p class="main-text__center">${data[0].description}</p>
+				<h2 class="main-subheader__slider">${data[0].title}</h2>
+				<p class="main-text__slider">${data[0].description}</p>
 			</div>
 		</div>`)
 		blockForTextOnDesktop.children[1].style.opacity = '1';
@@ -15,8 +15,8 @@ export function firstSliderTextMount(arraySlidesForTextOnMobile, blockForTextOnD
 		arraySlidesForTextOnMobile[0].insertAdjacentHTML('beforeend', `
 			<div class="block-slider">
 				<div class="slider-text">
-					<h2 class="main-subheader">${data[0].title}</h2>
-					<p class="main-text__center">${data[0].description}</p>
+					<h2 class="main-subheader__slider">${data[0].title}</h2>
+					<p class="main-text__slider">${data[0].description}</p>
 				</div>
 			</div>`)
 		arraySlidesForTextOnMobile[0].children[1].style.opacity = '1';

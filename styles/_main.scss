@@ -18,22 +18,18 @@ html, body{
 			text-align: left;
 
 			@media(min-width: 980px) {
-				max-width: 400px;
+				max-width: 500px;
 			}
 
 		}
 
-
 	}
-	
 
 	.block-3{
 		img{
 			margin-top: 25px
 		}
 	}
-
-
 
 	.block-5{
 		img{
@@ -43,6 +39,16 @@ html, body{
 	}
 
 	.block-6{
+
+		&__flex{
+			@media (min-width: 768px){
+				display: flex;
+				gap: 20px;
+				*{
+					flex: 1 1 48%
+				}
+			}
+		}
 
 		&__text-block {
 
@@ -71,11 +77,11 @@ html, body{
 				width: 100%;
 			}
 
-			padding: 20px 25px;
+			@include adaptiv-value('padding', 40, 25, 0);
 
 			h2{
+				@include adaptiv-value('font-size', 24, 16, 0);
 				color: $white;
-				font-size: 16px;
 				font-weight: 700;
 				letter-spacing: -0.39px;
 				text-align: center;
@@ -83,10 +89,10 @@ html, body{
 		}
 
 		&__form-block{
-			margin-top: 30px;
+			@include adaptiv-value('margin-top', 50, 30, 0);
 
 			label{
-				font-size: 12px;
+				@include adaptiv-value('font-size', 16, 12, 0);
 				font-weight: 400;
 
 				display: block;
@@ -94,7 +100,7 @@ html, body{
 			}
 
 			input{
-				font-size: 16px;
+				@include adaptiv-value('font-size', 20, 16, 0);
 				border-radius: 5px;
 				background: #FCFFFA;
 
@@ -102,10 +108,16 @@ html, body{
 			}
 
 			button{
+				@include adaptiv-value('font-size', 22, 16, 0);
 				font-weight: 700;
 				border-radius: 5px;
+				transition: 0.3s;
 
 				padding: 10px;
+
+				&:hover{
+					background: #e5e5e5;
+				}
 			}
 		}
 		
