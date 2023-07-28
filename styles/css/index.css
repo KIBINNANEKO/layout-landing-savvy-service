@@ -74,42 +74,27 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-weight: 400;
   font-family: Tektur;
-  src: url("../../fonts/Tektur/Tektur-Regular.ttf");
+  src: url("../../fonts/Tektur-Regular.ttf");
 }
 @font-face {
   font-weight: 500;
   font-family: Tektur;
-  src: url("../../fonts/Tektur/Tektur-Medium.ttf");
+  src: url("../../fonts/Tektur-Medium.ttf");
 }
 @font-face {
   font-weight: 800;
   font-family: Tektur;
-  src: url("../../fonts/Tektur/Tektur-ExtraBold.ttf");
+  src: url("../../fonts/Tektur-ExtraBold.ttf");
 }
 @font-face {
   font-weight: 400;
   font-family: SF Pro Text;
-  src: url("../../fonts/San Francisco Pro Text/SF-Pro-Text-Regular.otf");
-}
-@font-face {
-  font-weight: 500;
-  font-family: SF Pro Text;
-  src: url("../../fonts/San Francisco Pro Text/SF-Pro-Text-Medium.otf");
-}
-@font-face {
-  font-weight: 400;
-  font-family: SF Pro Text Italic;
-  src: url("../../fonts/San Francisco Pro Text/SF-Pro-Text-RegularItalic.otf");
-}
-@font-face {
-  font-weight: 600;
-  font-family: SF Pro Text;
-  src: url("../../fonts/San Francisco Pro Text/SF-Pro-Text-Semibold.otf");
+  src: url("../../fonts/SF-Pro-Text-Regular.ttf");
 }
 @font-face {
   font-weight: 700;
   font-family: SF Pro Text;
-  src: url("../../fonts/San Francisco Pro Text/SF-Pro-Text-Bold.otf");
+  src: url("../../fonts/SF-Pro-Text-Bold.otf");
 }
 html, body {
   min-width: "320px";
@@ -142,13 +127,16 @@ html .block-5 img, body .block-5 img {
   margin-top: calc(50px + 130 * ((100vw - 375px) / 1545));
   margin-bottom: calc(50px + 130 * ((100vw - 375px) / 1545));
 }
-@media (min-width: 768px) {
+@media (min-width: 1290px) {
   html .block-6__flex, body .block-6__flex {
     display: flex;
-    gap: 20px;
+    gap: 50px;
   }
-  html .block-6__flex *, body .block-6__flex * {
-    flex: 1 1 48%;
+  html .block-6__flex form, body .block-6__flex form {
+    flex: 1 1 50%;
+  }
+  html .block-6__flex div, body .block-6__flex div {
+    flex: 1 1 45%;
   }
 }
 html .block-6__text-block, body .block-6__text-block {
@@ -204,6 +192,9 @@ html .block-6__form-block button, body .block-6__form-block button {
 }
 html .block-6__form-block button:hover, body .block-6__form-block button:hover {
   background: #e5e5e5;
+}
+html footer .icon, body footer .icon {
+  width: calc(30px + 40 * ((100vw - 375px) / 1545));
 }
 
 ._container {
@@ -299,7 +290,7 @@ html .block-6__form-block button:hover, body .block-6__form-block button:hover {
 }
 
 .main-text700 {
-  font-size: calc(16px + 4 * ((100vw - 375px) / 1545));
+  font-size: calc(16px + 8 * ((100vw - 375px) / 1545));
   font-family: "SF Pro Text";
   font-weight: 700;
   line-height: 100%;
@@ -351,9 +342,21 @@ html .block-6__form-block button:hover, body .block-6__form-block button:hover {
   flex-direction: row;
 }
 
+a:active,
+a:hover,
+a {
+  text-decoration: none;
+  color: black;
+}
+
 @media (min-width: 980px) {
   .splide {
     width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .splide {
+    width: 40%;
   }
 }
 
@@ -429,6 +432,14 @@ html .block-6__form-block button:hover, body .block-6__form-block button:hover {
   height: 60px;
   opacity: 1;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.splide__arrow--next-my {
+  right: -1em;
+}
+
+.splide__arrow--prev-my {
+  left: -1em;
 }
 
 header {

@@ -2,6 +2,9 @@
 	@media(min-width: 980px){
 		width: 50%;
 	}
+	@media(min-width: 1200px) {
+		width: 40%;
+	}
 }
 
 .block-3{
@@ -83,4 +86,12 @@
 	height: 60px;
 	opacity: 1;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.splide__arrow--next-my {
+	right: -1em;
+}
+
+.splide__arrow--prev-my {
+	left: -1em;
 }

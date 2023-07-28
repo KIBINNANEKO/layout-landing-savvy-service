@@ -41,11 +41,14 @@ html, body{
 	.block-6{
 
 		&__flex{
-			@media (min-width: 768px){
+			@media (min-width: 1290px){
 				display: flex;
-				gap: 20px;
-				*{
-					flex: 1 1 48%
+				gap: 50px;
+				form{
+					flex: 1 1 50%
+				}
+				div{
+					flex: 1 1 45%;
 				}
 			}
 		}
@@ -122,6 +125,12 @@ html, body{
 		}
 		
 
+	}
+
+	footer{
+		.icon{
+			@include adaptiv-value('width', 70, 30, 0);
+		}
 	}
 
 

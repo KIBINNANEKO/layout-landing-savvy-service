@@ -101,7 +101,7 @@
 }
 
 .main-text700 {
-	@include adaptiv-value('font-size', 20, 16, 0);
+	@include adaptiv-value('font-size', 24, 16, 0);
 	font-family: $SF-Pro;
 	font-weight: 700;
 	line-height: 100%;
@@ -150,4 +150,11 @@
 		flex-direction: row;
 	}
 
+}
+
+a:active,
+a:hover,
+a {
+	text-decoration: none;
+	color: $black;
 }

@@ -2,7 +2,9 @@ import { firstSliderTextMount, onSlideChangeReplaceText } from "./functions/inde
 
 var splide = new Splide('.splide', {
 	classes: {
-		arrow: 'splide__arrow splide-arrow-my'
+		arrow: 'splide__arrow splide-arrow-my',
+		next: 'splide__arrow--next splide__arrow--next-my',
+		prev: 'splide__arrow--prev splide__arrow--prev-my'
 	},
 
 	type: 'loop',
