@@ -194,7 +194,7 @@ html .block-6__form-block button:hover, body .block-6__form-block button:hover {
   background: #e5e5e5;
 }
 html footer .icon, body footer .icon {
-  width: calc(30px + 40 * ((100vw - 375px) / 1545));
+  width: calc(30px + 30 * ((100vw - 375px) / 1545));
 }
 
 ._container {
