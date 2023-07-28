@@ -1,6 +1,10 @@
 import { firstSliderTextMount, onSlideChangeReplaceText } from "./functions/index.js";
 
 var splide = new Splide('.splide', {
+	classes: {
+		arrow: 'splide__arrow splide-arrow-my'
+	},
+
 	type: 'loop',
 	padding: '7%',
 	arrows: false,

@@ -15,7 +15,7 @@ export function onSlideChangeReplaceText(arraySlidesForTextOnMobile, blockForTex
 						<div class="block-slider">
 						<div class="slider-text">
 							<h2 class="main-subheader">${data[0].title}</h2>
-							<p class="main-text">${data[0].description}</p>
+							<p class="main-text__center">${data[0].description}</p>
 						</div>
 						</div>
 					`);
@@ -28,7 +28,7 @@ export function onSlideChangeReplaceText(arraySlidesForTextOnMobile, blockForTex
 						<div class="block-slider">
 						<div class="slider-text">
 							<h2 class="main-subheader">${data[1].title}</h2>
-							<p class="main-text">${data[1].description}</p>
+							<p class="main-text__center">${data[1].description}</p>
 						</div>
 						</div>
 					`);
@@ -41,7 +41,7 @@ export function onSlideChangeReplaceText(arraySlidesForTextOnMobile, blockForTex
 						<div class="block-slider">
 							<div class="slider-text">
 								<h2 class="main-subheader">${data[2].title}</h2>
-								<p class="main-text">${data[2].description}</p>
+								<p class="main-text__center">${data[2].description}</p>
 							</div>
 						</div>
 					`);
@@ -54,7 +54,7 @@ export function onSlideChangeReplaceText(arraySlidesForTextOnMobile, blockForTex
 						<div class="block-slider">
 							<div class="slider-text">
 								<h2 class="main-subheader">${data[3].title}</h2>
-								<p class="main-text">${data[3].description}</p>
+								<p class="main-text__center">${data[3].description}</p>
 							</div>
 						</div>
 					`);
@@ -67,7 +67,7 @@ export function onSlideChangeReplaceText(arraySlidesForTextOnMobile, blockForTex
 						<div class="block-slider">
 							<div class="slider-text">
 								<h2 class="main-subheader">${data[4].title}</h2>
-								<p class="main-text">${data[4].description}</p>
+								<p class="main-text__center">${data[4].description}</p>
 							</div>
 						</div>
 					`);
@@ -92,7 +92,7 @@ export function onSlideChangeReplaceText(arraySlidesForTextOnMobile, blockForTex
 						<div class="block-slider">
 						<div class="slider-text">
 							<h2 class="main-subheader">${data[0].title}</h2>
-							<p class="main-text">${data[0].description}</p>
+							<p class="main-text__center">${data[0].description}</p>
 						</div>
 						</div>
 					`);
@@ -105,7 +105,7 @@ export function onSlideChangeReplaceText(arraySlidesForTextOnMobile, blockForTex
 						<div class="block-slider">
 						<div class="slider-text">
 							<h2 class="main-subheader">${data[1].title}</h2>
-							<p class="main-text">${data[1].description}</p>
+							<p class="main-text__center">${data[1].description}</p>
 						</div>
 						</div>
 					`);
@@ -118,7 +118,7 @@ export function onSlideChangeReplaceText(arraySlidesForTextOnMobile, blockForTex
 						<div class="block-slider">
 							<div class="slider-text">
 								<h2 class="main-subheader">${data[2].title}</h2>
-								<p class="main-text">${data[2].description}</p>
+								<p class="main-text__center">${data[2].description}</p>
 							</div>
 						</div>
 					`);
@@ -131,7 +131,7 @@ export function onSlideChangeReplaceText(arraySlidesForTextOnMobile, blockForTex
 						<div class="block-slider">
 							<div class="slider-text">
 								<h2 class="main-subheader">${data[3].title}</h2>
-								<p class="main-text">${data[3].description}</p>
+								<p class="main-text__center">${data[3].description}</p>
 							</div>
 						</div>
 					`);
@@ -144,7 +144,7 @@ export function onSlideChangeReplaceText(arraySlidesForTextOnMobile, blockForTex
 						<div class="block-slider">
 							<div class="slider-text">
 								<h2 class="main-subheader">${data[4].title}</h2>
-								<p class="main-text">${data[4].description}</p>
+								<p class="main-text__center">${data[4].description}</p>
 							</div>
 						</div>
 					`);

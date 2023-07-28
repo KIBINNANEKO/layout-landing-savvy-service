@@ -7,7 +7,7 @@ export function firstSliderTextMount(arraySlidesForTextOnMobile, blockForTextOnD
 		<div class="block-slider">
 			<div class="slider-text">
 				<h2 class="main-subheader">${data[0].title}</h2>
-				<p class="main-text">${data[0].description}</p>
+				<p class="main-text__center">${data[0].description}</p>
 			</div>
 		</div>`)
 		blockForTextOnDesktop.children[1].style.opacity = '1';
@@ -16,7 +16,7 @@ export function firstSliderTextMount(arraySlidesForTextOnMobile, blockForTextOnD
 			<div class="block-slider">
 				<div class="slider-text">
 					<h2 class="main-subheader">${data[0].title}</h2>
-					<p class="main-text">${data[0].description}</p>
+					<p class="main-text__center">${data[0].description}</p>
 				</div>
 			</div>`)
 		arraySlidesForTextOnMobile[0].children[1].style.opacity = '1';

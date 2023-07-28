@@ -27,14 +27,24 @@
 }
 
 .main-subheader {
-	@include adaptiv-value('font-size', 36, 24, 0);
+	@include adaptiv-value('font-size', 50, 28, 0);
 	font-family: $Tektur;
 	font-weight: 500;
 	line-height: 110%;
 
 	padding-bottom: 10px;
 
+	text-align: center;
 
+	@media(min-width: 980px) {
+		text-align: center;
+	}
+
+	&__left{
+		@extend .main-subheader;
+		text-align: left;
+
+	}
 	
 }
 
@@ -45,17 +55,25 @@
 	line-height: 100%;
 	letter-spacing: -0.39px;
 
-	@media(min-width: 420px) {
-		text-align: center;
-	}
-
+	@media(max-width: 980px) {
+			text-align: left;
+		}
+	
 	@media(min-width: 980px) {
 		text-align: left;
 	}
 
-	&__left{
+	&__left {
 		@extend .main-text;
-		text-align: left;
+
+		@media(min-width: 980px) {
+			text-align: left;
+		}
+	}
+
+	&__center {
+		@extend .main-text;
+		text-align: center;
 	}
 }
 
@@ -103,4 +121,10 @@
 		justify-content: space-between;
 		align-items: center;
 	}
+
+	&__not-reverse {
+		@extend .display-flex;
+		flex-direction: row;
+	}
+
 }

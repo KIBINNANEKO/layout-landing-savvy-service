@@ -135,26 +135,8 @@ html .block-1 .block-1__text-block, body .block-1 .block-1__text-block {
     max-width: 400px;
   }
 }
-@media (min-width: 980px) {
-  html .block-2 h2, body .block-2 h2 {
-    text-align: center;
-  }
-}
-html .block-2 img, body .block-2 img {
-  width: 80%;
-}
-@media (min-width: 980px) {
-  html .block-3-1 h2, body .block-3-1 h2 {
-    text-align: center;
-  }
-}
 html .block-3 img, body .block-3 img {
   margin-top: 25px;
-}
-@media (min-width: 980px) {
-  html .block-4 h2, body .block-4 h2 {
-    text-align: center;
-  }
 }
 html .block-5 img, body .block-5 img {
   margin-top: calc(50px + 130 * ((100vw - 375px) / 1545));
@@ -239,33 +221,47 @@ html .block-6__form-block button, body .block-6__form-block button {
   padding-bottom: 10vh;
 }
 
-.main-subheader {
-  font-size: calc(24px + 12 * ((100vw - 375px) / 1545));
+.main-subheader, .main-subheader__left {
+  font-size: calc(28px + 22 * ((100vw - 375px) / 1545));
   font-family: "Tektur", cursive;
   font-weight: 500;
   line-height: 110%;
   padding-bottom: 10px;
+  text-align: center;
+}
+@media (min-width: 980px) {
+  .main-subheader, .main-subheader__left {
+    text-align: center;
+  }
+}
+.main-subheader__left {
+  text-align: left;
 }
 
-.main-text, .main-text__left {
+.main-text, .main-text__center, .main-text__left {
   font-size: calc(16px + 8 * ((100vw - 375px) / 1545));
   font-family: "SF Pro Text";
   font-weight: 400;
   line-height: 100%;
   letter-spacing: -0.39px;
 }
-@media (min-width: 420px) {
-  .main-text, .main-text__left {
-    text-align: center;
-  }
-}
-@media (min-width: 980px) {
-  .main-text, .main-text__left {
+@media (max-width: 980px) {
+  .main-text, .main-text__center, .main-text__left {
     text-align: left;
   }
 }
-.main-text__left {
-  text-align: left;
+@media (min-width: 980px) {
+  .main-text, .main-text__center, .main-text__left {
+    text-align: left;
+  }
+}
+@media (min-width: 980px) {
+  .main-text__left {
+    text-align: left;
+  }
+}
+.main-text__center {
+  text-align: center;
 }
 
 .main-text700 {
@@ -310,12 +306,15 @@ html .block-6__form-block button, body .block-6__form-block button {
 }
 
 @media (min-width: 980px) {
-  .display-flex {
+  .display-flex, .display-flex__not-reverse {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
   }
+}
+.display-flex__not-reverse {
+  flex-direction: row;
 }
 
 @media (min-width: 980px) {
@@ -388,6 +387,14 @@ html .block-6__form-block button, body .block-6__form-block button {
   .img_box img {
     width: 300px;
   }
+}
+
+.splide-arrow-my {
+  background: white;
+  width: 60px;
+  height: 60px;
+  opacity: 1;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 header {
