@@ -130,14 +130,6 @@ html .block-1 .block-1__text-block, body .block-1 .block-1__text-block {
     max-width: 400px;
   }
 }
-@media (min-width: 980px) {
-  html .block-1 .display-flex, body .block-1 .display-flex {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
 html .block-2 h2, body .block-2 h2 {
   text-align: center;
 }
@@ -146,6 +138,11 @@ html .block-2 img, body .block-2 img {
 }
 html .block-3 img, body .block-3 img {
   margin-top: 25px;
+}
+@media (min-width: 980px) {
+  html .block-4 h2, body .block-4 h2 {
+    text-align: center;
+  }
 }
 html .block-5 img, body .block-5 img {
   margin-top: calc(50px + 130 * ((100vw - 375px) / 1545));
@@ -237,14 +234,9 @@ html .block-6__form-block button, body .block-6__form-block button {
   line-height: 110%;
   padding-bottom: 10px;
 }
-@media (min-width: 420px) {
+@media (max-width: 980px) {
   .main-subheader {
     text-align: center;
-  }
-}
-@media (min-width: 980px) {
-  .main-subheader {
-    text-align: left;
   }
 }
 
@@ -299,7 +291,7 @@ html .block-6__form-block button, body .block-6__form-block button {
 }
 @media (min-width: 980px) {
   .full-image {
-    width: 35%;
+    width: 40%;
   }
 }
 
@@ -307,22 +299,26 @@ html .block-6__form-block button, body .block-6__form-block button {
   text-align: center;
 }
 
-.img_box {
-  transition: opacity 0.3s ease;
-}
-@media (max-width: 440px) {
-  .img_box img {
-    width: 230px;
+@media (min-width: 980px) {
+  .display-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
   }
 }
-@media (min-width: 440px) {
-  .img_box img {
-    width: 260px;
+
+@media (min-width: 980px) {
+  .splide {
+    width: 50%;
   }
 }
-@media (min-width: 800px) {
-  .img_box img {
-    width: 290px;
+
+@media (max-width: 980px) {
+  .block-3 ._container {
+    max-width: none;
+    margin: none;
+    padding: 0 0;
   }
 }
 
@@ -351,18 +347,27 @@ html .block-6__form-block button, body .block-6__form-block button {
   min-width: 260px;
   max-width: 370px;
   top: 10%;
-  margin: 0 auto;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 .slider-text h2 {
   white-space: nowrap;
-  font-size: calc(18px + 10 * ((100vw - 375px) / 1545));
+  font-size: calc(20px + 2 * ((100vw - 375px) / 1545));
 }
 .slider-text p {
-  font-size: calc(14px + 10 * ((100vw - 375px) / 1545));
+  font-size: calc(15px + 3 * ((100vw - 375px) / 1545));
+}
+@media (min-width: 980px) {
+  .slider-text {
+    position: relative;
+  }
 }
 
+.img_box {
+  transition: opacity 0.3s ease;
+}
 .img_box img {
-  width: 240px;
+  width: 210px;
 }
 @media (min-width: 440px) {
   .img_box img {
@@ -372,11 +377,6 @@ html .block-6__form-block button, body .block-6__form-block button {
 @media (min-width: 520px) {
   .img_box img {
     width: 300px;
-  }
-}
-@media (min-width: 700px) {
-  .img_box img {
-    width: 340px;
   }
 }
 

@@ -16,6 +16,7 @@
 		@include adaptiv-value('padding-right', 300, 100, 0);
 	}
 
+
 }
 
 .page {
@@ -33,11 +34,8 @@
 
 	padding-bottom: 10px;
 
-	@media(min-width: 420px) {
+	@media(max-width: 980px) {
 		text-align: center;
-	}
-	@media(min-width: 980px) {
-		text-align: left;
 	}
 	
 }
@@ -88,10 +86,19 @@
 	}
 
 	@media(min-width: 980px) {
-		width: 35%;
+		width: 40%;
 	}
 }
 
 .align-center{
 	text-align: center;
+}
+
+.display-flex {
+	@media(min-width: 980px) {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+	}
 }

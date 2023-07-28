@@ -18,14 +18,7 @@ html, body{
 			}
 		}
 
-		.display-flex {
-			@media(min-width: 980px) {
-				display: flex;
-				flex-direction: row-reverse;
-				justify-content: space-between;
-				align-items: center;
-			}
-		}
+
 	}
 
 	.block-2{
@@ -46,7 +39,11 @@ html, body{
 	}
 
 	.block-4{
-		
+		h2{
+			@media(min-width: 980px) {
+				text-align: center;
+			}
+		}
 	}
 
 	.block-5{
