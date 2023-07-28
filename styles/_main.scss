@@ -128,6 +128,20 @@ html, body{
 	}
 
 	footer{
+
+		.footer__block{
+				display: flex;
+				justify-content: center;
+				gap: 40px;
+				margin-top: 50px;
+
+				&__flex{
+					display: flex;
+					gap: 10px;
+					align-items: center;
+				}
+		}
+
 		.icon{
 			@include adaptiv-value('width', 60, 30, 0);
 		}

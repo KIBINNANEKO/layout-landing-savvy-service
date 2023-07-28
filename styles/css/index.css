@@ -193,6 +193,17 @@ html .block-6__form-block button, body .block-6__form-block button {
 html .block-6__form-block button:hover, body .block-6__form-block button:hover {
   background: #e5e5e5;
 }
+html footer .footer__block, body footer .footer__block {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+html footer .footer__block__flex, body footer .footer__block__flex {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 html footer .icon, body footer .icon {
   width: calc(30px + 30 * ((100vw - 375px) / 1545));
 }
@@ -406,6 +417,15 @@ a {
 @media (min-width: 980px) {
   .slider-text {
     position: relative;
+  }
+}
+@media (min-width: 1200px) {
+  .slider-text h2 {
+    white-space: nowrap;
+    font-size: calc(20px + 8 * ((100vw - 375px) / 1545));
+  }
+  .slider-text p {
+    font-size: calc(15px + 8 * ((100vw - 375px) / 1545));
   }
 }
 

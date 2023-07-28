@@ -62,6 +62,17 @@
 	@media(min-width: 980px) {
 		position: relative;
 	}
+
+	@media(min-width: 1200px){
+		h2 {
+			white-space: nowrap;
+			@include adaptiv-value('font-size', 28, 20, 0);
+		}
+	
+		p {
+			@include adaptiv-value('font-size', 23, 15, 0);
+		}
+	}
 }
 
 .img_box {
