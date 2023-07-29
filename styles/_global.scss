@@ -57,6 +57,18 @@
 			text-align: left;
 		}
 	}
+
+	&__optional{
+		@extend .main-subheader;
+		
+		@media(max-width: 980px) {
+				text-align: center;
+			}
+		
+			@media(min-width: 980px) {
+				text-align: left;
+			}
+	}
 	
 }
 
