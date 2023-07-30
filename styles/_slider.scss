@@ -1,3 +1,13 @@
+.block-3 {
+	.container {
+		@media(max-width: 980px) {
+			max-width: none;
+			margin: none;
+			padding: 0 0;
+		}
+	}
+}
+
 .splide{
 	@media(min-width: 980px){
 		width: 50%;
@@ -7,17 +17,6 @@
 	}
 }
 
-.block-3{
-	._container{
-		@media(max-width: 980px) {
-			max-width: none;
-			margin: none;
-			padding: 0 0;
-		}
-	}
-}
-
-
 .splide__pagination {
 	position: relative;
 	margin-top: 15px;
@@ -26,7 +25,6 @@
 		background: $black;
 	}
 }
-
 
 .block-slider{
 	position: relative;

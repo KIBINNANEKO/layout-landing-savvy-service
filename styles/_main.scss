@@ -1,152 +1,114 @@
-html, body{
-	min-width: $minWidth + 'px';
-	height: 100vh;
-	width: 100%;
+// --------------------------- BLOCK 1 --------------------------- //
 
-	color: $black;
+.block-1{
+	position: relative;
+	margin-top: 80px;
 
-	.block-1{
-		text-align: center;
-		position: relative;
-		margin-top: 80px;
-
-		@media(min-width: 1200px) {
-			margin-top: 110px;
-		}
-
-		.block-1__text-block{
-			text-align: left;
-
-			@media(min-width: 980px) {
-				max-width: 500px;
-			}
-
-		}
-
+	@media(min-width: 1200px) {
+		margin-top: 110px;
 	}
 
-	.block-3{
-		img{
-			margin-top: 25px
+	.block-1__text-block{
+		text-align: left;
+
+		@media(min-width: 980px) {
+			max-width: 500px;
+		}
+	}
+}
+
+// --------------------------- BLOCK 5 --------------------------- //
+
+.block-5{
+	img{
+		@include adaptiv-value('margin-top', 180, 50, 0);
+		@include adaptiv-value('margin-bottom', 180, 50, 0);
+	}
+}
+
+// --------------------------- 6 --------------------------- //
+
+.block-6{
+	&__flex{
+		@media (min-width: 1290px){
+			display: flex;
+			gap: 50px;
+			form{
+				flex: 1 1 50%
+			}
+			div{
+				flex: 1 1 45%;
+			}
 		}
 	}
 
-	.block-5{
-		img{
-			@include adaptiv-value('margin-top', 180, 50, 0);
-			@include adaptiv-value('margin-bottom', 180, 50, 0);
-		}
-	}
+	&__text-block {
 
-	.block-6{
+		margin-top: 25px;
+		margin-bottom: 25px;
 
-		&__flex{
-			@media (min-width: 1290px){
-				display: flex;
-				gap: 50px;
-				form{
-					flex: 1 1 50%
-				}
-				div{
-					flex: 1 1 45%;
-				}
-			}
-		}
-
-		&__text-block {
-
-			margin-top: 25px;
-			margin-bottom: 25px;
-
-			&__header {
-				font-family: $SF-Pro;
-				font-size: 16px;
-				font-weight: 700;
-				line-height: 100%;
-				letter-spacing: -0.39px;
-			}
-			
-		}
-
-		&__form{
-			color: $white;
-			background-color: $form;
-			border-radius: 10px;
-			box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
+		&__header {
 			font-family: $SF-Pro;
-
-			*{
-				width: 100%;
-			}
-
-			@include adaptiv-value('padding', 40, 25, 0);
-
-			h2{
-				@include adaptiv-value('font-size', 24, 16, 0);
-				color: $white;
-				font-weight: 700;
-				letter-spacing: -0.39px;
-				text-align: center;
-			}
-		}
-
-		&__form-block{
-			@include adaptiv-value('margin-top', 50, 30, 0);
-
-			label{
-				@include adaptiv-value('font-size', 16, 12, 0);
-				font-weight: 400;
-
-				display: block;
-				padding-bottom: 5px;
-			}
-
-			input{
-				@include adaptiv-value('font-size', 20, 16, 0);
-				border-radius: 5px;
-				background: #FCFFFA;
-
-				padding: 10px;
-			}
-
-			button{
-				@include adaptiv-value('font-size', 22, 16, 0);
-				font-weight: 700;
-				border-radius: 5px;
-				transition: 0.3s;
-
-				padding: 10px;
-
-				&:hover{
-					background: #e5e5e5;
-				}
-			}
-		}
-		
-
-	}
-
-	footer{
-
-		.footer__block{
-				display: flex;
-				justify-content: center;
-				gap: 40px;
-				margin-top: 50px;
-
-				&__flex{
-					display: flex;
-					gap: 10px;
-					align-items: center;
-				}
-		}
-
-		.icon{
-			@include adaptiv-value('width', 60, 30, 0);
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 100%;
+			letter-spacing: -0.39px;
 		}
 	}
 
+	&__form{
+		color: $white;
+		background-color: $form;
+		border-radius: 10px;
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
+		font-family: $SF-Pro;
 
+		*{
+			width: 100%;
+		}
+
+		@include adaptiv-value('padding', 40, 25, 0);
+
+		h2{
+			@include adaptiv-value('font-size', 24, 16, 0);
+			color: $white;
+			font-weight: 700;
+			letter-spacing: -0.39px;
+			text-align: center;
+		}
+	}
+
+	&__form-block{
+		@include adaptiv-value('margin-top', 50, 30, 0);
+
+		label{
+			@include adaptiv-value('font-size', 16, 12, 0);
+			font-weight: 400;
+
+			display: block;
+			padding-bottom: 5px;
+		}
+
+		input{
+			@include adaptiv-value('font-size', 20, 16, 0);
+			border-radius: 5px;
+			background: #FCFFFA;
+
+			padding: 10px;
+		}
+
+		button{
+			@include adaptiv-value('font-size', 22, 16, 0);
+			font-weight: 700;
+			border-radius: 5px;
+			transition: 0.3s;
+
+			padding: 10px;
+
+			&:hover{
+				background: #e5e5e5;
+			}
+		}
+	}
 }

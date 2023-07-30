@@ -1,5 +1,3 @@
-
-
 @mixin adaptiv-value($property, $startSize, $minSize, $type){
 	$addSize: $startSize - $minSize;
 	@if $type==1 {
