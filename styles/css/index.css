@@ -119,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: calc(50px + 130 * ((100vw - 375px) / 1545));
 }
 
-@media (min-width: 1290px) {
+@media (min-width: 1150px) {
   .block-6__flex {
     display: flex;
     gap: 50px;
