@@ -6,7 +6,6 @@ Landing page for the startup Savvy Service, an online menu platform for establis
 
 Technology stack:
 
-- HTML, SCSS-modules;
+- html, scss;
 - JavaScript;
-- React;
 - Figma (design).
